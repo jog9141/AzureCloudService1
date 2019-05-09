@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="AzureCloudService1" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="testJoe">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=josephtest;AccountKey=$(_josephtest.key_)" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" value="4e76f453-d8b5-4de9-b07b-9ab42cc1cde7" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
